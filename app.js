@@ -1,12 +1,12 @@
-const addDays = require("date-fns/addDays");
 const express = require("express");
+const addDays = require("date-fns/addDays");
 
 const app = express();
 
 app.get("/", (request, response) => {
   let toady = new Date();
   let dateAfter100Days = addDays(
-    new Date(today.fetFullYear(), today.getMonth(), today.getDate()),
+    new Date(today.getFullYear(), today.getMonth(), today.getDate()),
     100
   );
   response.send(
